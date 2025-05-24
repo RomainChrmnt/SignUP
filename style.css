@@ -1,0 +1,179 @@
+
+@font-face {
+    font-family: 'dogicaregular';
+    src: url('webfontkit-20250522-103825//dogica-webfont.woff2') format('woff2'),
+         url('webfontkit-20250522-103825/dogica-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+}
+
+.topRightText{
+    font-size: 12px;
+}
+
+/* Section gauche */
+
+.leftSection{
+  width:35%;
+  background-image: url(/Background.jpg); 
+  display:flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.logoContainer{
+  position: relative;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  opacity : 0.6;
+  padding: 1rem 0;
+}
+
+
+
+.odinLogo{ 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 6em;
+  color: white;
+  
+}
+
+.credit{
+display: flex;
+justify-content: center;
+color: white;
+padding-bottom: 1.1em;
+}
+
+a{
+    margin-left : 2px;
+}
+
+img {
+ width :80px;
+ height: 105px;
+
+}
+
+
+/* Right Section */
+
+.rightSection{
+  display:flex;
+  width: 65%;
+  flex-direction: column;
+  
+}
+
+.topRight {    
+    
+    font-family: "dogicaregular"; 
+    background-color: rgb(235, 212, 198);   
+    font-size: 1rem;   
+    height : 24%;   
+    
+}
+
+.topRightText{
+      
+  position: inline;
+  
+  padding-top: 16vh;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+
+.midRight{
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    border : 1px solid rgb(189, 188, 188);
+}
+
+.midRight{
+  display: flex;
+  padding:2em;
+  gap: 5%;   
+}
+
+.form-answer{
+  display: flex;
+  flex-direction: column;
+   /*border : 1px solid black     */
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label{
+    display: block;
+}
+
+
+input{  
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  border: 1px solid rgb(189, 188, 188);
+  border-radius: 2px;
+  width: 100%;
+  height: 1.8rem;
+  margin-top : 1px;
+}
+
+label{
+    color : rgb(139, 133, 133);
+    font-size : smaller;
+    margin-left:1px;
+}
+
+input:focus{
+    border-color: rgb(150, 150, 231);
+    box-shadow:  10px 10px 5px -6px rgba(0,0,0,0.3);
+}
+
+.password:invalid {
+    border-color : red;
+}
+
+button{
+  background-color: rgb(255, 255, 255);
+  /*border: 1px solid rgb(50, 49, 49);*/
+  border-radius: 3px;
+  color: rgb(0, 0, 0);
+  padding: 2px 8px;
+  margin-top : 10px;
+  margin-left : 19px;
+  
+}
+
+.registerUsers{
+    margin-left: 19px ;
+    margin-top : 5px;
+    
+}
